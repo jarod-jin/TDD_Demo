@@ -2,11 +2,21 @@ package anagrams;
 
 
 import org.junit.Test;
-
 import java.util.HashSet;
-import java.util.Set;
-
 import static org.junit.Assert.assertEquals;
+
+/**
+ * Anagrams
+ Write a program to generate all potential
+ anagrams of an input string.
+
+ For example, the potential anagrams of "biro" are
+
+ biro bior brio broi boir bori
+ ibro ibor irbo irob iobr iorb
+ rbio rboi ribo riob roib robi
+ obir obri oibr oirb orbi orib
+ */
 
 public class AnagramTest {
 
