@@ -22,13 +22,12 @@ public class FizzBuzz {
     }
 
     private void getResultFromCondition(int num) {
-        List<FizzBuzzCondition> fizzBuzzConditionList = new ArrayList<FizzBuzzCondition>(){{
+        new ArrayList<FizzBuzzCondition>(){{
             add(new FizzBuzzCondition((num%3==0),"Fizz"));
             add(new FizzBuzzCondition((num%5==0), "Buzz"));
             add(new FizzBuzzCondition((num%3!=0 && num%5!=0), String.valueOf(num)));
             add(new FizzBuzzCondition((num < step), "\n"));
-        }};
-        fizzBuzzConditionList.stream().filter(FizzBuzzCondition::isCondi).forEach(condition->stringBuilder.append(condition.getResult()));
+        }}.stream().filter(FizzBuzzCondition::isCondi).forEach(condition->stringBuilder.append(condition.getResult()));
 
 //        if ((num)%3==0) stringBuilder.append("Fizz");
 //        if ((num)%5==0) stringBuilder.append("Buzz");
