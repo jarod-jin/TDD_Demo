@@ -28,10 +28,5 @@ public class FizzBuzz {
             add(new FizzBuzzCondition((num%3!=0 && num%5!=0), String.valueOf(num)));
             add(new FizzBuzzCondition((num < step), "\n"));
         }}.stream().filter(FizzBuzzCondition::isCondi).forEach(condition->stringBuilder.append(condition.getResult()));
-
-//        if ((num)%3==0) stringBuilder.append("Fizz");
-//        if ((num)%5==0) stringBuilder.append("Buzz");
-//        if ((num)%3!=0 && (num)%5!=0) stringBuilder.append(num);
-//        if (num < step)  stringBuilder.append("\n");
     }
 }
